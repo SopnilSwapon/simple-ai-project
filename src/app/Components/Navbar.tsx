@@ -3,6 +3,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
+import logo from "@/assests/simple-logo - Copy.png";
 import AppButton from "./common/AppButton";
 
 export default function Navbar() {
@@ -11,48 +12,41 @@ export default function Navbar() {
   const [templateOpen, setTemplateOpen] = useState(false);
 
   return (
-    <nav className="fixed mx-auto w-full top-4 z-50">
-      <nav className="max-w-[754px] text-[15px] bg-[#FBFBFB] border-1 border-[#adadad33] rounded-[8px] mx-auto flex items-center justify-between p-[6px] my-3">
+    <nav className="fixed px-75 w-full top-4 z-50">
+      <nav className="text-[15px] rounded-[8px] mx-auto flex items-center justify-between p-[6px] my-3">
         {/* Brand */}
         <Link href="/" className="flex items-center pl-3">
-          <Image
-            src="https://cdn.prod.website-files.com/675c8e48ca0e0fb5ab421239/67ea1567f801b7bf3d63fad7_zuno-logo-b.svg"
-            alt="Brand Logo"
-            width={53}
-            height={18}
-          />
+          <Image src={logo} alt="Brand Logo" width={140} height={47} />
         </Link>
-
-        {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6 items-center">
-          <Link href="/" className="hover:text-gray-500">
+          <Link href="/" className="text-[#4CCEEE]">
             Home
           </Link>
+          <div className="w-[0.1px] h-7 bg-[#FFFFFF1A] mx-24"></div>
 
-          {/* Dropdown Pages */}
-          <div className="relative">
-            <button
-              onClick={() => setPagesOpen(!pagesOpen)}
-              className="flex items-center hover:text-gray-500 gap-1 cursor-pointer"
-            >
-              Pages <ChevronDown size={16} />
-            </button>
-          </div>
-
-          {/* Dropdown Template */}
-          <div className="relative">
-            <button
-              onClick={() => setTemplateOpen(!templateOpen)}
-              className="flex items-center hover:text-gray-500 gap-1 cursor-pointer"
-            >
-              Template <ChevronDown size={16} />
-            </button>
-          </div>
-          <AppButton
-            className="px-4 py-2 rounded-lg bg-[#D3EFA2]! hover:bg-[#B7DB7D]!"
-            title="Request demo"
-          />
+          <Link
+            href="/"
+            className="hover:text-[#4CCEEE] flex items-center gap-1"
+          >
+            Product <ChevronDown size={16} />
+          </Link>
+          <Link
+            href="/"
+            className="hover:text-[#4CCEEE] flex items-center gap-1"
+          >
+            Feature <ChevronDown size={16} />
+          </Link>
+          <Link href="/" className="hover:text-[#4CCEEE]">
+            About Us
+          </Link>
+          <Link href="/" className="hover:text-[#4CCEEE]">
+            Contact
+          </Link>
         </div>
+        <AppButton
+          className="hover:bg-[#4CCEEE]! hover:border-none w-[125px] h-12"
+          title="Sign Up"
+        />
 
         {/* Mobile Menu Button */}
         <button
