@@ -1,9 +1,20 @@
-import React from 'react'
+import Link from "next/link";
 
-export default function AppButton() {
+interface IAppButtonLinkProps {
+  title: string;
+  className?: string;
+}
+
+export default function AppButton({
+  title,
+  className = "",
+}: IAppButtonLinkProps) {
   return (
-    <div>
-      button
-    </div>
-  )
+    <Link
+      href="/#"
+      className={`p-[6px] px-4 rounded-full bg-[#F1F1F1] ${className}`}
+    >
+      {title}
+    </Link>
+  );
 }
