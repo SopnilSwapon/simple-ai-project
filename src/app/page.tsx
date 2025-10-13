@@ -1,7 +1,8 @@
-import Navbar from "./Components/Navbar";
-import Banner from "./Components/Banner";
-import TestimonialSection from "./Components/TestimonialSection";
-import SMPLGPTSec from "./Components/SMPL-GPTSec";
+import Navbar from "./Components/home/Navbar";
+import Banner from "./Components/home/Banner";
+import TestimonialSection from "./Components/home/TestimonialSection";
+import SMPLGPTSec from "./Components/home/SMPL-GPTSec";
+import AboutUs from "./Components/home/AboutSMPLGPT";
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Banner />
       <TestimonialSection />
       <SMPLGPTSec />
+      <AboutUs />
     </div>
   );
 }

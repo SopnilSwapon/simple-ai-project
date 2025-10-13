@@ -1,14 +1,14 @@
 import React from "react";
 import vectorImg from "@/assets/code-svgrepo-com 1.png";
 import Image from "next/image";
-import { Header1 } from "./common/Header1";
-import AppButton from "./common/AppButton";
+import { Header1 } from "../common/Header1";
+import AppButton from "../common/AppButton";
 
 export default function SMPLGPTSec() {
   return (
     <div
       className="max-w-[1320px] mx-auto h-[466px] flex flex-col mt-25 mb-[50px] justify-center items-center 
-  px-[120px] py-[100px] relative rounded-xl bg-[linear-gradient(to_right,#0B1820,#070E15)]"
+  px-[120px] py-[100px] relative rounded-[16px] bg-[linear-gradient(to_right,#0B1820,#070E15)]"
     >
       <Image src={vectorImg} height={355} width={355} alt="Vector svg" />
       <div className="absolute top-25 flex items-center flex-col">

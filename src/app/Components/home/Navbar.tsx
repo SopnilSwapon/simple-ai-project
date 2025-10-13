@@ -4,7 +4,7 @@ import Link from "next/link";
 import { Menu, X, ChevronDown } from "lucide-react";
 import Image from "next/image";
 import logo from "@/assets/simple-logo - Copy.png";
-import AppButton from "./common/AppButton";
+import AppButton from "../common/AppButton";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
