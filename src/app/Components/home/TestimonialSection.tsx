@@ -9,7 +9,6 @@ import img4 from "@/assets/image 25.png";
 import img5 from "@/assets/image 27.png";
 import img6 from "@/assets/image 29.png";
 
-// Example images, replace with your own image URLs or imports
 const tickerImages: StaticImageData[] = [img1, img2, img3, img4, img5, img6];
 
 export default function TestimonialSection() {

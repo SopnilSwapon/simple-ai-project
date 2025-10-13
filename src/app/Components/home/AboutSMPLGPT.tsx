@@ -5,7 +5,7 @@ import icon3 from "@/assets/Group (1).png";
 import icon4 from "@/assets/Group (2).png";
 import left_side_img from "@/assets/Frame 1000002434.png";
 import Image, { StaticImageData } from "next/image";
-interface Feature {
+interface IFeature {
   id: number;
   title: string;
   description1: string;
@@ -13,7 +13,7 @@ interface Feature {
   icon: StaticImageData;
 }
 
-const features: Feature[] = [
+const features: IFeature[] = [
   {
     id: 1,
     title: "AI-Powered Smart Contract Audits",

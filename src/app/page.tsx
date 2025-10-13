@@ -3,15 +3,19 @@ import Banner from "./Components/home/Banner";
 import TestimonialSection from "./Components/home/TestimonialSection";
 import SMPLGPTSec from "./Components/home/SMPL-GPTSec";
 import AboutUs from "./Components/home/AboutSMPLGPT";
+import BlockChainSolutionSection from "./Components/home/BlockChainSolutionSec";
 
 export default function Home() {
   return (
     <div>
-      <Navbar />
-      <Banner />
-      <TestimonialSection />
-      <SMPLGPTSec />
-      <AboutUs />
+      <div>
+        <Navbar />
+        <Banner />
+        <TestimonialSection />
+        <SMPLGPTSec />
+        <AboutUs />
+        <BlockChainSolutionSection />
+      </div>
     </div>
   );
 }
