@@ -7,6 +7,7 @@ import BlockChainSolutionSection from "./Components/home/BlockChainSolutionSec";
 import FAQSection from "./Components/home/FAQSection";
 import BlockChainAutomation from "./Components/home/BlockChainAutomation";
 import BuySellSection from "./Components/home/BuySellSection";
+import AppFooter from "./Components/common/AppFooter";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <BlockChainSolutionSection />
         <FAQSection />
         <BuySellSection />
+        <AppFooter />
       </div>
     </div>
   );
