@@ -81,7 +81,7 @@ export default function BlockChainSolutionSection() {
               button_content,
               icon,
             }) => (
-              <li
+              <div
                 key={id}
                 className="flex gap-4 justify-between p-6 bg-[#0B1820]/40 border border-white/10 rounded-2xl hover:bg-[#0B1820]/60 transition"
               >
@@ -99,7 +99,7 @@ export default function BlockChainSolutionSection() {
                   />
                 </div>
                 <Image src={icon} height={355} width={355} alt="Vector svg" />
-              </li>
+              </div>
             ),
           )}
         </ul>
