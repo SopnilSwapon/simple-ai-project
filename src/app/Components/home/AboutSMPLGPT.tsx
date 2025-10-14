@@ -57,6 +57,7 @@ export default function AboutUs() {
               title="About Us"
               className="w-26 border border-[#2A7183]! text-sm! rounded-[60px] bg-[#4CCEEE1A]"
             />
+
             <h1
               className={`font-[700] text-[48px] my-4 text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}
             >

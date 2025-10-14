@@ -4,6 +4,7 @@ import TestimonialSection from "./Components/home/TestimonialSection";
 import SMPLGPTSec from "./Components/home/SMPL-GPTSec";
 import AboutUs from "./Components/home/AboutSMPLGPT";
 import BlockChainSolutionSection from "./Components/home/BlockChainSolutionSec";
+import FAQSection from "./Components/home/FAQSection";
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
         <SMPLGPTSec />
         <AboutUs />
         <BlockChainSolutionSection />
+        <FAQSection />
       </div>
     </div>
   );

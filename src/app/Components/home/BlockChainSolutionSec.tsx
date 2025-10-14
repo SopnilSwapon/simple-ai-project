@@ -1,4 +1,7 @@
-import vectorImg from "@/assets/code-svgrepo-com 1.png";
+import img1 from "@/assets/code-svgrepo-com 1.png";
+import img2 from "@/assets/shield-half-svgrepo-com-1 1.png";
+import img3 from "@/assets/coin-svgrepo-com 1.png";
+import img4 from "@/assets/chat 1.png";
 import Image, { StaticImageData } from "next/image";
 import AppButton from "../common/AppButton";
 interface IFeature {
@@ -18,7 +21,7 @@ const features: IFeature[] = [
       "Detect vulnerabilities in smart contracts before deployment.",
     description2: "Real-time AI analysis for secure transactions.",
     button_content: "Try SMPL GPT",
-    icon: vectorImg,
+    icon: img1,
   },
   {
     id: 2,
@@ -26,7 +29,7 @@ const features: IFeature[] = [
     description1: "AI-driven analytics to optimize decision-making.",
     description2: "Predict trends and improve operational efficiency.",
     button_content: "Secure Blockchain",
-    icon: vectorImg,
+    icon: img2,
   },
   {
     id: 3,
@@ -35,7 +38,7 @@ const features: IFeature[] = [
       "Identify and mitigate threats using AI-powered security monitoring.",
     description2: "Protect against scams, hacks, and fraud in real-time.",
     button_content: "Start Building",
-    icon: vectorImg,
+    icon: img3,
   },
   {
     id: 4,
@@ -43,7 +46,7 @@ const features: IFeature[] = [
     description1: "AI-assisted code generation & optimization.",
     description2: "Seamless integration with multiple blockchain networks.",
     button_content: "Automate with AI Agents",
-    icon: vectorImg,
+    icon: img4,
   },
 ];
 
@@ -53,15 +56,17 @@ export default function BlockChainSolutionSection() {
       <div>
         {/* Header Section */}
         <div className="mb-12">
+          <AppButton
+            title="Our Feature"
+            className="w-32 border border-[#2A7183]! text-sm! mx-auto rounded-[60px] bg-[#4CCEEE1A]"
+          />
           <h1
-            className={`font-[700] text-[48px] my-4 text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}
+            className={`font-[700] text-[48px] my-4 flex justify-center gap-2 text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}
           >
             <span className="text-white!">AI-Powered</span> Blockchain Solutions
           </h1>
-          <p className="text-white/70 mx-auto">
-            SIMPLE AI leverages artificial intelligence to enhance blockchain
-            security, automate workflows, and create smarter decentralized
-            applications.
+          <p className="text-white/70 flex justify-center">
+            Empowering blockchain with cutting-edge AI intelligence.
           </p>
         </div>
 
