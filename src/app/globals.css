@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  font-size: 16px;
 }
 
 /* ✅ Define theme variables inline for Tailwind v4 */
@@ -10,8 +11,8 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
 
-  /* 👇 Replace Geist with Lexend font variable */
   --font-sans: var(--font-lexend);
+  --font-size-base: 14px;
 }
 
 /* ✅ Dark mode support */
@@ -27,4 +28,5 @@ body {
   background: var(--background);
   color: var(--foreground);
   font-family: var(--font-lexend), Arial, Helvetica, sans-serif;
+  font-size: 16px;
 }

@@ -48,7 +48,7 @@ export default function Navbar() {
           </Link>
         </div>
         <AppButton
-          className="hover:bg-[#4CCEEE]! hover:border-none w-[125px] h-12 backdrop-blur-sm bg-white/5"
+          className="hover:bg-[#4CCEEE]! hover:border-none backdrop-blur-sm bg-white/5"
           title="Sign Up"
         />
 

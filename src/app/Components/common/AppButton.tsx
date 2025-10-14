@@ -1,5 +1,6 @@
+import React from "react";
 interface IAppButtonLinkProps {
-  title: string;
+  title: string | React.ReactNode;
   className?: string;
 }
 
