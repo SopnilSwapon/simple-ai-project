@@ -15,26 +15,34 @@ export default function TestimonialSection() {
   return (
     // Infinite scrolling ticker of images
     <div className="overflow-hidden flex justify-center items-center h-40 bg-[#0B1117] w-full">
-      <motion.div
-        className="flex gap-3 justify-between w-full"
-        animate={{ x: ["0%", "-50%"] }}
-        transition={{
-          repeat: Infinity,
-          duration: 25,
-          ease: "linear",
-        }}
-      >
-        {tickerImages.map((image, i: number) => (
-          <div key={i} className="">
-            <Image
-              src={image}
-              alt={`Ticker ${i + 1}`}
-              width={120}
-              height={160}
-            />
-          </div>
-        ))}
-      </motion.div>
+      <div className="relative w-full overflow-hidden">
+        <motion.div
+          className="flex gap-6"
+          animate={{ x: [0, "-50%"] }}
+          transition={{
+            x: {
+              repeat: Infinity,
+              repeatType: "loop",
+              duration: 30,
+              ease: "linear",
+            },
+          }}
+        >
+          {[...tickerImages, ...tickerImages].map((img, idx) => (
+            <div
+              key={idx}
+              className="relative flex-shrink-0 w-64 gap-4 h-10 rounded-lg overflow-hidden shadow-2xl"
+            >
+              <Image
+                src={img}
+                alt="infinity scrolling logo"
+                fill
+                className="object-cover"
+              />
+            </div>
+          ))}
+        </motion.div>
+      </div>
     </div>
   );
 }

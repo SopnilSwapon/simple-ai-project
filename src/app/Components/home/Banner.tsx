@@ -5,7 +5,7 @@ import banner_logo from "@/assets/banner-img.png";
 export default function Banner() {
   return (
     <div className="pt-24">
-      <Image src={banner_logo} height={832} width={1920} alt="banner logo" />
+      <Image src={banner_logo} height={832} width={3020} alt="banner logo" />
     </div>
   );
 }
