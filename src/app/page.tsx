@@ -16,9 +16,9 @@ export default function Home() {
       <div className="max-w-[1320px] mx-auto px-6">
         <SMPLGPTSec />
         <AboutSMPLGPT />
-        {/*  <BlockChainAutomation />
+        {/* <BlockChainAutomation /> */}
         <BlockChainSolutionSection />
-        <FAQSection />
+        {/*  <FAQSection />
         <BuySellSection /> */}
       </div>
     </div>

@@ -48,7 +48,7 @@ const features: IFeature[] = [
 
 export default function AboutSMPLGPT() {
   return (
-    <section className="max-w-[1320px] mx-auto mt-25 flex justify-between flex-col-reverse lg:flex-row items-center">
+    <section className="mt-25 flex justify-between flex-col-reverse lg:flex-row items-center">
       <div>
         <div>
           {/* Header Section */}

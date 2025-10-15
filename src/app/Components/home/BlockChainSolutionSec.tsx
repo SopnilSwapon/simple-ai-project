@@ -52,7 +52,7 @@ const features: IFeature[] = [
 
 export default function BlockChainSolutionSection() {
   return (
-    <section className="px-6 max-w-[1320px] mx-auto mt-25 py-10 text-white">
+    <section className="mt-25 py-10">
       <div>
         {/* Header Section */}
         <div className="mb-12">
@@ -61,11 +61,11 @@ export default function BlockChainSolutionSection() {
             className="w-32 border border-[#2A7183]! text-sm! mx-auto rounded-[60px] bg-[#4CCEEE1A]"
           />
           <h1
-            className={`font-[700] text-[48px] my-4 flex justify-center gap-2 text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}
+            className={`font-bold text-2xl md:text-[48px] my-3 md:my-4 flex justify-center text-center gap-2 text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}
           >
             <span className="text-white!">AI-Powered</span> Blockchain Solutions
           </h1>
-          <p className="text-white/70 flex justify-center">
+          <p className="text-white/70 flex justify-center text-center">
             Empowering blockchain with cutting-edge AI intelligence.
           </p>
         </div>
@@ -83,10 +83,10 @@ export default function BlockChainSolutionSection() {
             }) => (
               <div
                 key={id}
-                className="flex gap-4 justify-between p-6 bg-[#0B1820]/40 border border-white/10 rounded-2xl hover:bg-[#0B1820]/60 transition"
+                className="flex flex-col-reverse lg:flex-row gap-4 justify-between p-6 bg-[#0B1820]/40 border border-white/10 rounded-2xl hover:bg-[#0B1820]/60 transition"
               >
                 <div>
-                  <h4 className="text-lg mt-2 font-semibold text-cyan-400">
+                  <h4 className="text-xl md:text-2xl mt-2 font-semibold text-cyan-400">
                     {title}
                   </h4>
                   <ul className="list-disc py-6 pl-4 text-[16px] text-[#B2B4B6]">
@@ -98,7 +98,13 @@ export default function BlockChainSolutionSection() {
                     title={button_content}
                   />
                 </div>
-                <Image src={icon} height={355} width={355} alt="Vector svg" />
+                <Image
+                  src={icon}
+                  className="h-50 md:h-60 w-50 md:w-60 mx-auto"
+                  height={355}
+                  width={355}
+                  alt="Vector svg"
+                />
               </div>
             ),
           )}
