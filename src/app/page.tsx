@@ -18,8 +18,8 @@ export default function Home() {
         <AboutSMPLGPT />
         {/* <BlockChainAutomation /> */}
         <BlockChainSolutionSection />
-        {/*  <FAQSection />
-        <BuySellSection /> */}
+        <FAQSection />
+        {/*    <BuySellSection /> */}
       </div>
     </div>
   );
