@@ -19,8 +19,8 @@ export default function Home() {
         {/* <BlockChainAutomation /> */}
         <BlockChainSolutionSection />
         <FAQSection />
-        {/*    <BuySellSection /> */}
       </div>
+      <BuySellSection />
     </div>
   );
 }

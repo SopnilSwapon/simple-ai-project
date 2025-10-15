@@ -26,18 +26,18 @@ export default function BuySellSection() {
       className="bg-cover bg-center bg-no-repeat"
       style={{ backgroundImage: "url('/pricing_bg.png')" }}
     >
-      <div className="max-w-[1320px] mx-auto mt-25 py-25 flex gap-x-16 justify-between items-center">
+      <div className="max-w-[1320px] mx-auto mt-15 lg:mt-25 py-15 lg:py-25 flex gap-x-16 justify-between items-center flex-col lg:flex-row px-4">
         <div className="flex-1">
           <div>
             {/* Header Section */}
             <div className="mb-12">
               <AppButton
                 title="Buy SMPL"
-                className="w-26 border border-[#2A7183]! text-sm! rounded-[60px] bg-[#4CCEEE1A]"
+                className="w-26 border border-[#2A7183]! text-sm! rounded-[60px] bg-[#4CCEEE1A] mx-auto lg:mx-0"
               />
 
               <h1
-                className={`font-[700] text-[48px] my-4 text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}
+                className={`font-[700] md:text-[48px] text-2xl my-4 text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}
               >
                 Buy $SMPL{" "}
                 <span className="text-white!">
@@ -54,19 +54,19 @@ export default function BuySellSection() {
             </div>
           </div>
         </div>
-        <div className="flex-1 max-w-[648px]">
+        <div className="flex-1 w-full lg:max-w-[648px]">
           {/* Buy Sell Tabs */}
           <div className="flex w-full flex-col gap-6">
             <Tabs defaultValue="Buy">
               <TabsList className="w-full gap-0 p-0 h-auto bg-transparent">
                 <TabsTrigger
-                  className="w-full text-2xl font-bold rounded-b-none [&[data-state='active']]:bg-[#4CCEEE] [&[data-state='active']]:text-black bg-[#0b1a22] py-3 mb-[-10px] rounded-r-none"
+                  className="w-full text-xl lg:text-2xl font-bold rounded-b-none [&[data-state='active']]:bg-[#4CCEEE] [&[data-state='active']]:text-black bg-[#0b1a22] py-3 mb-[-10px] rounded-r-none"
                   value="Buy"
                 >
                   Buy
                 </TabsTrigger>
                 <TabsTrigger
-                  className="w-full text-2xl font-bold rounded-b-none [&[data-state='active']]:bg-[#4CCEEE] [&[data-state='active']]:text-black bg-[#0b1a22] py-3 mb-[-10px] rounded-l-none"
+                  className="w-full text-xl lg:text-2xl font-bold rounded-b-none [&[data-state='active']]:bg-[#4CCEEE] [&[data-state='active']]:text-black bg-[#0b1a22] py-3 mb-[-10px] rounded-l-none"
                   value="Sell"
                 >
                   Sell
@@ -201,7 +201,7 @@ export default function BuySellSection() {
                     </div>
                   </CardContent>
 
-                  <CardFooter className="flex gap-3">
+                  <CardFooter className="flex gap-3 flex-col lg:flex-row">
                     <AppButton
                       className="bg-[#4CCEEE] border-none text-black backdrop-blur-sm"
                       title="Buy $SMPL Now"
@@ -376,7 +376,7 @@ export default function BuySellSection() {
                     </div>
                   </CardContent>
 
-                  <CardFooter className="flex gap-3">
+                  <CardFooter className="flex gap-3 flex-col lg:flex-row">
                     <AppButton
                       className="bg-[#4CCEEE] border-none text-black backdrop-blur-sm"
                       title="Buy $SMPL Now"
