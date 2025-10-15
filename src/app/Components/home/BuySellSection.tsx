@@ -201,7 +201,7 @@ export default function BuySellSection() {
                     </div>
                   </CardContent>
 
-                  <CardFooter className="flex gap-3 flex-col lg:flex-row">
+                  <CardFooter className="flex gap-3 flex-col lg:flex-row mx-auto justify-center">
                     <AppButton
                       className="bg-[#4CCEEE] border-none text-black backdrop-blur-sm"
                       title="Buy $SMPL Now"
@@ -376,7 +376,7 @@ export default function BuySellSection() {
                     </div>
                   </CardContent>
 
-                  <CardFooter className="flex gap-3 flex-col lg:flex-row">
+                  <CardFooter className="flex gap-3 flex-col lg:flex-row justify-center">
                     <AppButton
                       className="bg-[#4CCEEE] border-none text-black backdrop-blur-sm"
                       title="Buy $SMPL Now"

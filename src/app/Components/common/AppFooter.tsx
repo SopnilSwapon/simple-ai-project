@@ -1,6 +1,7 @@
+import Image from "next/image";
+import Link from "next/link";
 import { Mail, Twitter, Send, Github } from "lucide-react";
 import SMPLAIlogo from "@/assets/2 2.png";
-import Image from "next/image";
 
 export default function AppFooter() {
   return (
@@ -20,18 +21,14 @@ export default function AppFooter() {
           </p>
 
           <div className="flex space-x-2 mt-6">
-            <button className="backdrop-blur-[10px] bg-[radial-gradient(95.52%_96.38%_at_23%_10%,rgba(76,206,238,0.26),rgba(43,117,136,0)_100%)] p-3 rounded-full border border-[#295366]">
-              <Mail className="w-5 h-5 text-[#4CCEEE]" />
-            </button>
-            <button className="backdrop-blur-[10px] bg-[radial-gradient(95.52%_96.38%_at_23%_10%,rgba(76,206,238,0.26),rgba(43,117,136,0)_100%)] p-3 rounded-full border border-[#295366]">
-              <Twitter className="w-5 h-5 text-[#4CCEEE]" />
-            </button>
-            <button className="backdrop-blur-[10px] bg-[radial-gradient(95.52%_96.38%_at_23%_10%,rgba(76,206,238,0.26),rgba(43,117,136,0)_100%)] p-3 rounded-full border border-[#295366]">
-              <Send className="w-5 h-5 text-[#4CCEEE]" />
-            </button>
-            <button className="backdrop-blur-[10px] bg-[radial-gradient(95.52%_96.38%_at_23%_10%,rgba(76,206,238,0.26),rgba(43,117,136,0)_100%)] p-3 rounded-full border border-[#295366]">
-              <Github className="w-5 h-5 text-[#4CCEEE]" />
-            </button>
+            {[Mail, Twitter, Send, Github].map((Icon, i) => (
+              <button
+                key={i}
+                className="backdrop-blur-[10px] bg-[radial-gradient(95.52%_96.38%_at_23%_10%,rgba(76,206,238,0.26),rgba(43,117,136,0)_100%)] p-3 rounded-full border border-[#295366]"
+              >
+                <Icon className="w-5 h-5 text-[#4CCEEE]" />
+              </button>
+            ))}
           </div>
         </div>
 
@@ -40,16 +37,16 @@ export default function AppFooter() {
           <h3 className="text-lg font-semibold text-white mb-4">Quick Links</h3>
           <ul className="space-y-4 text-sm text-gray-400">
             <li>
-              <a href="#">Product</a>
+              <Link href="#">Product</Link>
             </li>
             <li>
-              <a href="#">Features</a>
+              <Link href="#">Features</Link>
             </li>
             <li>
-              <a href="#">Docs</a>
+              <Link href="#">Docs</Link>
             </li>
             <li>
-              <a href="#">Buy $SMPL</a>
+              <Link href="#">Buy $SMPL</Link>
             </li>
           </ul>
         </div>
@@ -59,16 +56,16 @@ export default function AppFooter() {
           <h3 className="text-lg font-semibold text-white mb-4">Company</h3>
           <ul className="space-y-4 text-sm text-gray-400">
             <li>
-              <a href="#">About Us</a>
+              <Link href="#">About Us</Link>
             </li>
             <li>
-              <a href="#">Contact Us</a>
+              <Link href="#">Contact Us</Link>
             </li>
             <li>
-              <a href="#">Privacy Policy</a>
+              <Link href="#">Privacy Policy</Link>
             </li>
             <li>
-              <a href="#">Terms & Conditions</a>
+              <Link href="#">Terms & Conditions</Link>
             </li>
           </ul>
         </div>
@@ -78,16 +75,16 @@ export default function AppFooter() {
           <h3 className="text-lg font-semibold text-white mb-4">Product</h3>
           <ul className="space-y-4 text-sm text-gray-400">
             <li>
-              <a href="#">SMPL GPT</a>
+              <Link href="#">SMPL GPT</Link>
             </li>
             <li>
-              <a href="#">SMPL PROTECT</a>
+              <Link href="#">SMPL PROTECT</Link>
             </li>
             <li>
-              <a href="#">SMPL CREATE</a>
+              <Link href="#">SMPL CREATE</Link>
             </li>
             <li>
-              <a href="#">SMPL AI AGENTS</a>
+              <Link href="#">SMPL AI AGENTS</Link>
             </li>
           </ul>
         </div>
@@ -101,22 +98,22 @@ export default function AppFooter() {
             Subscribe to our newsletter for the latest AI and blockchain updates
           </p>
 
-          {/* ✅ Centered & Responsive Subscribe Form */}
-          <form className="flex items-center bg-[#0f1a23] rounded-full overflow-hidden md:max-w-none">
+          <form className="flex items-center bg-[#0f1a23] rounded-full border border-[#4CCEEE] overflow-hidden md:max-w-none">
             <input
               type="email"
               placeholder="Your Email Here"
-              className="flex-grow bg-transparent px-3 py-3 text-sm text-gray-300 placeholder-gray-500 outline-none min-w-0"
+              className="flex-grow bg-transparent px-3 py-3  text-sm text-gray-300 placeholder-gray-500 outline-none min-w-0"
             />
             <button
               type="submit"
-              className="bg-[#4CCEEE] hover:bg-[#36b4d1] text-[#091017] text-sm font-medium px-2 py-2.5 m-[3px] rounded-full transition-all duration-200 whitespace-nowrap"
+              className="bg-[#4CCEEE] hover:bg-[#36b4d1] text-[#091017] text-sm font-medium px-3 py-3 m-[3px] rounded-full transition-all duration-200 whitespace-nowrap"
             >
               Subscribe
             </button>
           </form>
         </div>
       </div>
+
       <hr className="mx-auto max-w-[1320px] h-[1px] border-dashed border-r border-[#383D41]" />
 
       {/* Bottom Line */}
