@@ -12,10 +12,10 @@ export default function Home() {
   return (
     <div>
       <Banner />
-      <div className="">
-        <InfiniteScroll />
-        {/*<SMPLGPTSec />
-        <AboutUs />
+      <InfiniteScroll />
+      <div className="max-w-[1320px] mx-auto px-6">
+        <SMPLGPTSec />
+        {/*   <AboutUs />
         <BlockChainAutomation />
         <BlockChainSolutionSection />
         <FAQSection />
