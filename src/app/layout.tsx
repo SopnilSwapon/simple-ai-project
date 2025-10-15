@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
+import AppNavbar from "./Components/common/AppNavbar";
+import AppFooter from "./Components/common/AppFooter";
 
 // Load Lexend font
 const lexend = Lexend({
@@ -21,7 +23,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${lexend.variable}`}>{children}</body>
+      <body className={`${lexend.variable} w-full relative`}>
+        <AppNavbar />
+        {children}
+        {/* <AppFooter /> */}
+      </body>
     </html>
   );
 }
