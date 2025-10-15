@@ -26,7 +26,7 @@ export default function RootLayout({
       <body className={`${lexend.variable} w-full relative`}>
         <AppNavbar />
         {children}
-        {/* <AppFooter /> */}
+        <AppFooter />
       </body>
     </html>
   );
