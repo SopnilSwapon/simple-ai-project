@@ -46,9 +46,9 @@ const features: IFeature[] = [
   },
 ];
 
-export default function AboutUs() {
+export default function AboutSMPLGPT() {
   return (
-    <section className="max-w-[1320px] mx-auto mt-25 flex justify-between items-center">
+    <section className="max-w-[1320px] mx-auto mt-25 flex justify-between flex-col-reverse lg:flex-row items-center">
       <div>
         <div>
           {/* Header Section */}
@@ -59,7 +59,7 @@ export default function AboutUs() {
             />
 
             <h1
-              className={`font-[700] text-[48px] my-4 text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}
+              className={`font-[700] text-2xl md:text-[48px] my-4 text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}
             >
               <span className="text-white!">About</span> SIMPLE AI
             </h1>
@@ -75,14 +75,14 @@ export default function AboutUs() {
             {features.map(({ id, title, description1, description2, icon }) => (
               <div key={id}>
                 <div className="flex gap-4 ">
-                  <div className="rounded-full border-[#2A7183]! p-2 bg-[#4CCEEE1A]">
+                  <div className="backdrop-blur-[10px] bg-[radial-gradient(95.52%_96.38%_at_23%_10%,rgba(76,206,238,0.26),rgba(43,117,136,0)_100%)] p-2 rounded-full border border-[#295366]">
                     <Image
                       src={icon}
                       alt={title}
                       className="w-10 h-10 text-cyan-400"
                     />
                   </div>
-                  <h4 className="text-lg mt-2 font-semibold text-cyan-400">
+                  <h4 className="text-[16px] md:text-lg mt-2 font-semibold text-cyan-400">
                     {title}
                   </h4>
                 </div>

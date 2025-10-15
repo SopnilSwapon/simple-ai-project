@@ -1,7 +1,7 @@
 import Banner from "./Components/home/Banner";
 // import TestimonialSection from "./Components/home/TestimonialSection";
 import SMPLGPTSec from "./Components/home/SMPL-GPTSec";
-import AboutUs from "./Components/home/AboutSMPLGPT";
+import AboutSMPLGPT from "./Components/home/AboutSMPLGPT";
 import BlockChainSolutionSection from "./Components/home/BlockChainSolutionSec";
 import FAQSection from "./Components/home/FAQSection";
 import BlockChainAutomation from "./Components/home/BlockChainAutomation";
@@ -15,8 +15,8 @@ export default function Home() {
       <InfiniteScroll />
       <div className="max-w-[1320px] mx-auto px-6">
         <SMPLGPTSec />
-        {/*   <AboutUs />
-        <BlockChainAutomation />
+        <AboutSMPLGPT />
+        {/*  <BlockChainAutomation />
         <BlockChainSolutionSection />
         <FAQSection />
         <BuySellSection /> */}
