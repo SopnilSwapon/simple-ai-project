@@ -68,7 +68,7 @@ export default function BlockChainProfessional() {
         </div>
         <Image src={designLogo} height={10} width={1320} alt="Vector svg" />
         {/* Features List */}
-        <ul className="grid grid-cols-1 sm:grid-cols-3 gap-8 mt-12">
+        <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-12">
           {features.map(
             ({ id, name, description, icon, designation, rating }) => (
               <div
@@ -84,7 +84,7 @@ export default function BlockChainProfessional() {
                 </div>
                 <div className="mt-6 flex justify-between items-center">
                   <Image src={icon} height={155} width={155} alt="Vector svg" />
-                  <Rating value={4} readOnly max={5} />
+                  <Rating value={rating} readOnly max={5} />
                 </div>
               </div>
             ),
