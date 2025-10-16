@@ -62,8 +62,8 @@ const features: IFeature[] = [
 
 export default function FoundationOfAI() {
   return (
-    <section className="pt-25 py-10">
-      <div>
+    <section className="bg-[#091017]">
+      <div className="pt-25 py-10 max-w-[1320px] mx-auto px-6 py:15 lg:py-25">
         {/* Header Section */}
         <div className="mb-12">
           <AppButton
