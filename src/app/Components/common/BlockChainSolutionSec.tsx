@@ -110,7 +110,6 @@ export default function BlockChainSolutionSection() {
           )}
         </ul>
       </div>
-      <div></div>
     </section>
   );
 }

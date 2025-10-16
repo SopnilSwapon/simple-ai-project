@@ -7,7 +7,7 @@ export default function GetStartSection() {
       className="bg-cover bg-center bg-no-repeat rounded-2xl backdrop-brightness-[20%]"
       style={{ backgroundImage: "url('/getstartedBg.png')" }}
     >
-      <div className="max-w-[1320px] mx-auto mt-15  lg:mt-25   py-15 lg:py-25 flex gap-x-16 justify-between items-center flex-col lg:flex-row px-4">
+      <div className="max-w-[1320px] mx-auto mt-15  lg:mt-25   py-10 lg:py-15 flex gap-x-16 justify-between items-center flex-col lg:flex-row px-4">
         <div className="flex-1">
           <div>
             {/* Header Section */}
