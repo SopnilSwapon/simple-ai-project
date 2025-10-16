@@ -33,7 +33,7 @@ export default function BuySellSection() {
             <div className="mb-12">
               <AppButton
                 title="Buy SMPL"
-                className="w-26 border border-[#2A7183]! text-sm! rounded-[60px] bg-[#4CCEEE1A] mx-auto lg:mx-0"
+                className="border border-[#2A7183]! text-sm! rounded-[60px] bg-[#4CCEEE1A] mx-auto lg:mx-0"
               />
 
               <h1

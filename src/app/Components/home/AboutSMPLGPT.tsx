@@ -79,7 +79,7 @@ export default function AboutSMPLGPT() {
                     <Image
                       src={icon}
                       alt={title}
-                      className="w-10 h-10 text-cyan-400"
+                      className="w-10 h-10 p-[6px] text-cyan-400"
                     />
                   </div>
                   <h4 className="text-[16px] md:text-lg mt-2 font-semibold text-cyan-400">
