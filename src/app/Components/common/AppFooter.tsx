@@ -5,7 +5,7 @@ import SMPLAIlogo from "@/assets/2 2.png";
 
 export default function AppFooter() {
   return (
-    <footer className="bg-[#091017] text-gray-300 border-t border-gray-700">
+    <footer className="bg-[#091017] text-gray-300">
       <div className="max-w-[1320px] mx-auto px-6 py-20 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
         {/* Brand Info */}
         <div className="border-dashed border-r border-[#383D41] w-full">
