@@ -51,3 +51,70 @@ body {
 .animate-close {
   animation: close 0.3s ease-out forwards;
 }
+
+.strok1 {
+  -webkit-text-stroke: 1px var(--primary-color);
+}
+
+.stroke-text1 {
+  -webkit-text-stroke: 1px var(--primary);
+}
+.strok {
+  -webkit-text-stroke: 2px var(--primary);
+}
+
+.stroke-text {
+  -webkit-text-stroke: 2px var(--primary);
+}
+
+@keyframes wave {
+  0%,
+  100% {
+    clip-path: polygon(
+      0% 45%,
+      16% 44%,
+      33% 50%,
+      54% 60%,
+      70% 61%,
+      84% 59%,
+      100% 52%,
+      100% 100%,
+      0% 100%
+    );
+  }
+  50% {
+    clip-path: polygon(
+      0% 70%,
+      15% 65%,
+      34% 66%,
+      51% 62%,
+      67% 50%,
+      84% 45%,
+      100% 40%,
+      100% 100%,
+      0% 100%
+    );
+  }
+}
+
+.wave-animation {
+  animation: wave 4s ease-in-out infinite;
+}
+
+/* If you're using a primaryColor variable in Tailwind, you might need to define it here */
+.text-primaryColor {
+  color: var(--primary);
+}
+
+.gradient-text {
+  background: linear-gradient(
+    180deg,
+    wheat 0%,
+    wheat 50%,
+    #4cceee 50%,
+    #4cceee 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
