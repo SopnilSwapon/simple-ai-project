@@ -6,7 +6,7 @@ export default function JoinRevolutionSection() {
       className="bg-cover bg-center bg-no-repeat rounded-2xl backdrop-brightness-[20%]"
       style={{ backgroundImage: "url('/getstartedBg.png')" }}
     >
-      <div className="max-w-[1320px] mx-auto  py-10 lg:py-15 flex gap-x-16 justify-between items-center flex-col lg:flex-row px-4">
+      <div className="max-w-[1320px] mx-auto  py-10 lg:py-15 flex gap-x-16 justify-between items-center flex-col lg:flex-row px-4 my-15 lg:my-25">
         <div className="flex-1">
           <div>
             {/* Header Section */}

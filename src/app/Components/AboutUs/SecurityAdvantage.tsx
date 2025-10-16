@@ -80,8 +80,8 @@ const advantageData: IAdvantageData[] = [
 ];
 export default function SecurityAdvantage() {
   return (
-    <section className="mt-25">
-      <div className="flex justify-between flex-col-reverse lg:flex-row items-center">
+    <section>
+      <div className="flex justify-between flex-col-reverse lg:flex-row items-center py-25">
         <div>
           <div>
             {/* Header Section */}
@@ -138,7 +138,7 @@ export default function SecurityAdvantage() {
           <Image src={right_side_img} width={747} height={700} alt="logo" />
         </div>
       </div>
-      <div className="flex justify-between flex-col-reverse lg:flex-row-reverse gap-20  items-center mt-15 lg:mt-25">
+      <div className="flex justify-between flex-col-reverse  lg:flex-row-reverse gap-20  items-center mt-15 lg:mt-25">
         <div>
           <div>
             {/* Header Section */}
@@ -183,7 +183,7 @@ export default function SecurityAdvantage() {
             efficiency.
           </p>
         </div>
-        <div>
+        <div className="w-full">
           <Image src={left_side_img} width={947} height={900} alt="logo" />
         </div>
       </div>
