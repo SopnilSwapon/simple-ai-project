@@ -203,11 +203,11 @@ export default function BuySellSection() {
 
                   <CardFooter className="flex gap-3 flex-col lg:flex-row mx-auto justify-center">
                     <AppButton
-                      className="bg-[#4CCEEE] border-none text-black backdrop-blur-sm"
+                      className="bg-[#4CCEEE] border-none text-black backdrop-blur-sm py-5 text-lg"
                       title="Buy $SMPL Now"
                     />
                     <AppButton
-                      className="bg-transparent border-none text-white backdrop-blur-sm flex items-center gap-2"
+                      className="bg-transparent border-none text-white backdrop-blur-sm flex items-center gap-2 py-5 text-lg"
                       title={
                         <span className="flex items-center gap-2">
                           <svg
@@ -378,11 +378,11 @@ export default function BuySellSection() {
 
                   <CardFooter className="flex gap-3 flex-col lg:flex-row justify-center">
                     <AppButton
-                      className="bg-[#4CCEEE] border-none text-black backdrop-blur-sm"
+                      className="bg-[#4CCEEE] border-none text-black backdrop-blur-sm py-5 text-lg"
                       title="Buy $SMPL Now"
                     />
                     <AppButton
-                      className="bg-transparent border-none text-white backdrop-blur-sm flex items-center gap-2"
+                      className="bg-transparent border-none text-white backdrop-blur-sm flex items-center gap-2 py-5 text-lg"
                       title={
                         <span className="flex items-center gap-2">
                           <svg

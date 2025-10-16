@@ -3,7 +3,7 @@ import img2 from "@/assets/shield-half-svgrepo-com-1 1.png";
 import img3 from "@/assets/coin-svgrepo-com 1.png";
 import img4 from "@/assets/chat 1.png";
 import Image, { StaticImageData } from "next/image";
-import AppButton from "../common/AppButton";
+import AppButton from "./AppButton";
 interface IFeature {
   id: number;
   title: string;
@@ -58,7 +58,7 @@ export default function BlockChainSolutionSection() {
         <div className="mb-12">
           <AppButton
             title="Our Feature"
-            className="w-32 border border-[#2A7183]! text-sm! mx-auto rounded-[60px] bg-[#4CCEEE1A]"
+            className="border border-[#2A7183]! text-sm! mx-auto rounded-[60px] bg-[#4CCEEE1A]"
           />
           <h1
             className={`font-bold text-2xl md:text-[48px] my-3 md:my-4 flex justify-center text-center gap-2 text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}

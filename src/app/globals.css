@@ -1,31 +1,24 @@
 @import "tailwindcss";
 
 /* 🌑 Global dark theme only */
-:root {
-  --background: #060c12;
-  --foreground: #ededed;
-  --font-sans: var(--font-lexend);
-  --font-size-base: 14px;
-  font-size: 16px;
+@layer base {
+  :root {
+    --background: #060c12;
+    --foreground: #ededed;
+    --font-sans: var(--font-lexend);
+    --font-size-base: 14px;
+    font-size: 16px;
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-lexend), Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
 }
 
-/* ✅ Define theme variables inline for Tailwind v4 */
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-lexend);
-  --font-size-base: 14px;
-}
-
-/* ✅ Apply base styles */
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-lexend), Arial, Helvetica, sans-serif;
-  font-size: 16px;
-}
-
-/* ✅ Accordion animations */
+/* ✅ Animations */
 @keyframes open {
   from {
     height: 0;
@@ -34,7 +27,6 @@ body {
     height: var(--radix-accordion-content-height);
   }
 }
-
 @keyframes close {
   from {
     height: var(--radix-accordion-content-height);
@@ -43,30 +35,28 @@ body {
     height: 0;
   }
 }
-
 .animate-open {
   animation: open 0.3s ease-out forwards;
 }
-
 .animate-close {
   animation: close 0.3s ease-out forwards;
 }
 
+/* ✅ Text stroke helpers */
 .strok1 {
   -webkit-text-stroke: 1px var(--primary-color);
 }
-
 .stroke-text1 {
   -webkit-text-stroke: 1px var(--primary);
 }
 .strok {
   -webkit-text-stroke: 2px var(--primary);
 }
-
 .stroke-text {
   -webkit-text-stroke: 2px var(--primary);
 }
 
+/* ✅ Wave animation */
 @keyframes wave {
   0%,
   100% {
@@ -96,16 +86,11 @@ body {
     );
   }
 }
-
 .wave-animation {
   animation: wave 4s ease-in-out infinite;
 }
 
-/* If you're using a primaryColor variable in Tailwind, you might need to define it here */
-.text-primaryColor {
-  color: var(--primary);
-}
-
+/* ✅ Gradient text */
 .gradient-text {
   background: linear-gradient(
     180deg,
