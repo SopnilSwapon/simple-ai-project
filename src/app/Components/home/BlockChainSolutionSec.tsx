@@ -52,7 +52,7 @@ const features: IFeature[] = [
 
 export default function BlockChainSolutionSection() {
   return (
-    <section className="mt-25 py-10">
+    <section className="pt-25 py-10">
       <div>
         {/* Header Section */}
         <div className="mb-12">
