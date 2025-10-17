@@ -82,7 +82,7 @@ export default function BlockChainProfessional() {
                   <h3 className="mb-6 mt-2 text-white/70">{designation}</h3>
                   <p className="mb-1">{description}</p>
                 </div>
-                <div className="mt-6 flex justify-between items-center">
+                <div className="mt-6 flex justify-between flex-col lg:flex-row items-center gap-4">
                   <Image src={icon} height={155} width={155} alt="Vector svg" />
                   <Rating value={rating} readOnly max={5} />
                 </div>
