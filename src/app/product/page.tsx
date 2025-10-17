@@ -3,6 +3,7 @@ import BlockChainSolutionSection from "../Components/common/BlockChainSolutionSe
 import GetStartSection from "../Components/product/GetStartSection";
 import FAQSection from "../Components/home/FAQSection";
 import BlockChainProfessional from "../Components/product/BlockChainProfessional";
+import Slider from "../Components/product/Slider";
 
 export default function page() {
   return (
@@ -11,6 +12,7 @@ export default function page() {
       <GetStartSection />
       <FAQSection />
       <BlockChainProfessional />
+      <Slider />
     </div>
   );
 }
