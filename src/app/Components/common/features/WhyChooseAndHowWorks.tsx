@@ -65,7 +65,7 @@ export default function WhyChooseAndHowWorks({
                   <Image
                     src={icon}
                     alt={title}
-                    className="w-8 lg:w-10 h-8 lg:h-8 p-[6px] text-cyan-400"
+                    className="w-8 lg:w-10 h-8 lg:h-10 p-[6px] text-cyan-400"
                   />
                 </div>
                 <h4 className="text-[16px] md:text-lg mt-2 font-semibold text-cyan-400">
