@@ -3,7 +3,7 @@ import img2 from "@/assets/image 23.png";
 import img3 from "@/assets/image 25.png";
 import designLogo from "@/assets/Group 18.png";
 import Image, { StaticImageData } from "next/image";
-import AppButton from "../common/AppButton";
+import AppButton from "./AppButton";
 import { Rating } from "@/components/ui/Rating";
 import Slider from "./Slider";
 

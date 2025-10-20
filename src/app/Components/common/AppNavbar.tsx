@@ -31,6 +31,7 @@ export default function AppNavbar() {
     { title: "SMPL GPT", href: "/features/smpl-gpt" },
     { title: "SMPL Protect", href: "/features/smpl-protect" },
     { title: "SMPL Create", href: "/features/smpl-create" },
+    { title: "SMPL AI Agents", href: "/features/smpl-ai-agents" },
   ];
 
   return (

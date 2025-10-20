@@ -78,9 +78,9 @@ export default function SMPLGPT() {
                 </div>
                 <Image
                   src={icon}
-                  className="h-50 md:h-full w-50 md:w-full  mx-auto"
-                  height={355}
-                  width={355}
+                  className="h-50 md:h-100 w-50 md:w-100  mx-auto"
+                  height={55}
+                  width={55}
                   alt="Vector svg"
                 />
               </div>

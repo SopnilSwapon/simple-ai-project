@@ -2,7 +2,7 @@ import React from "react";
 import BlockChainSolutionSection from "../Components/home/BlockChainSolutionSec";
 import GetStartSection from "../Components/product/GetStartSection";
 import FAQSection from "../Components/home/FAQSection";
-import BlockChainProfessional from "../Components/product/BlockChainProfessional";
+import BlockChainProfessional from "../Components/common/BlockChainProfessional";
 
 export default function page() {
   return (

@@ -86,9 +86,9 @@ export default function WhyChooseSMPLGPT() {
               {/* Header Section */}
               <div className="mb-12">
                 <h1
-                  className={`font-[700] lg:text-[48px] text-2xl my-4 flex gap-2 text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}
+                  className={`font-[700] lg:text-[48px] text-2xl my-4 flex flex-row gap-2 text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}
                 >
-                  <span className=" text-white">Wht Choose</span> SMPLAL GPT
+                  <span className=" text-white">Why Choose</span> SMPLAL GPT
                 </h1>
                 <p>Unlock Data-Driven Insights for Smarter Decision-Making</p>
               </div>
@@ -103,7 +103,7 @@ export default function WhyChooseSMPLGPT() {
                       <Image
                         src={icon}
                         alt={title}
-                        className="w-10 h-10 p-[6px] text-cyan-400"
+                        className="w-8 lg:w-10 h-8 lg:h-8 p-[6px] text-cyan-400"
                       />
                     </div>
                     <h4 className="text-[16px] md:text-lg mt-2 font-semibold text-cyan-400">
@@ -155,7 +155,7 @@ export default function WhyChooseSMPLGPT() {
                       <Image
                         src={icon}
                         alt={title}
-                        className="w-10 h-10 p-[6px] text-cyan-400"
+                        className="w-8 lg:w-10 h-8 lg:h-8 p-[6px] text-cyan-400"
                       />
                     </div>
                     <h4 className="text-[16px] md:text-lg mt-2 font-semibold text-cyan-400">
