@@ -33,7 +33,7 @@ export default function SMPLGPTProduct() {
         <div className="mb-12">
           <AppButton
             title="Our Product"
-            className="border border-[#2A7183]! text-sm! mx-auto rounded-[60px] bg-[#4CCEEE1A]"
+            className="border border-[#2A7183]! p-2! text-sm! mx-auto bg-[#4CCEEE1A]"
           />
           <h1
             className={`font-bold text-xl md:text-[32px] my-3 md:my-4 flex justify-center text-center gap-2 text-white!  font-[Sofia_Sans]`}

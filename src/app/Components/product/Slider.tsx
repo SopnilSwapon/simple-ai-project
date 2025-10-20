@@ -94,12 +94,11 @@ export default function Slider() {
         spaceBetween={30}
         slidesPerGroup={3}
         loop={true}
-        speed={1600} // 👈 smooth transition speed
+        speed={1600}
         centeredSlides={false}
         keyboard={{ enabled: true }}
-        pagination={{ clickable: true }}
         navigation={true}
-        modules={[Keyboard, Pagination, Navigation]}
+        modules={[Keyboard, Navigation]}
         breakpoints={{
           0: { slidesPerView: 1, slidesPerGroup: 1 },
           768: { slidesPerView: 2, slidesPerGroup: 2 },
@@ -116,7 +115,7 @@ export default function Slider() {
               <div className="flex justify-center w-full mb-10">
                 <Image src={logo} height={10} width={120} alt="Vector svg" />
               </div>
-              <div className="flex flex-col overflow-visible p-8 bg-[#0B1820]/40  justify-between h-full border border-white/10 rounded-2xl hover:bg-[#0B1820]/60 transition">
+              <div className="flex flex-col h-[273px] overflow-visible p-8 bg-[#0B1820]/40  justify-between border border-white/10 rounded-2xl hover:bg-[#0B1820]/60 transition">
                 <div>
                   <h2 className="text-xl md:text-2xl mt-2 font-semibold ">
                     {name}
