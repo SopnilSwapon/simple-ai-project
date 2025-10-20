@@ -54,7 +54,7 @@ export default function BlockChainProfessional() {
         <div className="mb-12">
           <AppButton
             title="Testimonials"
-            className="border border-[#2A7183]! text-sm! mx-auto rounded-[60px] bg-[#4CCEEE1A]"
+            className="border border-[#2A7183]! py-2! text-sm! mx-auto rounded-[60px] bg-[#4CCEEE1A]"
           />
           <h1
             className={`font-[700] lg:text-[48px] text-2xl my-4 flex justify-center flex-col text-center text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}

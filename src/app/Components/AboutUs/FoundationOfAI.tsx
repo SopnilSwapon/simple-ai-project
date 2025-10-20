@@ -68,7 +68,7 @@ export default function FoundationOfAI() {
         <div className="mb-12">
           <AppButton
             title="Core Values"
-            className="border border-[#2A7183]! text-sm! mx-auto rounded-[60px] bg-[#4CCEEE1A]"
+            className="border border-[#2A7183]! text-sm! py-2! mx-auto rounded-[60px] bg-[#4CCEEE1A]"
           />
           <h1
             className={`font-[700] lg:text-[48px] text-2xl my-4 flex justify-center text-center text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}
