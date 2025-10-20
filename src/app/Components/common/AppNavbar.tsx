@@ -56,10 +56,7 @@ export default function AppNavbar() {
 
         {/* Desktop Button */}
         <div className="hidden lg:block pr-6">
-          <AppButton
-            className="hover:bg-[#4CCEEE]! hover:border-none backdrop-blur-sm bg-white/5"
-            title="Sign Up"
-          />
+          <AppButton className="bg-white/5" title="Sign Up" />
         </div>
 
         {/* Mobile Menu Button */}
@@ -93,7 +90,7 @@ export default function AppNavbar() {
           ))}
 
           <AppButton
-            className="hover:bg-[#4CCEEE]! hover:border-none backdrop-blur-sm bg-white/5 w-32"
+            className="hover:bg-[#4CCEEE]! hover:border-none backdrop-blur-sm bg-white/5"
             title="Sign Up"
           />
         </div>

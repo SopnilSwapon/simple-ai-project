@@ -20,15 +20,15 @@ export default function Banner() {
           <Image src={simpleAi} height={1000} width={1000} alt="simple ai" />
           <div className="flex flex-col sm:flex-row gap-6 mt-23">
             <AppButton
-              className="bg-[#4CCEEE]! text-black border-none backdrop-blur-sm w-42 py-5 text-lg"
+              className="bg-[#4CCEEE]! w-42 text-black border-none backdrop-blur-sm text-lg"
               title="Buy"
             />
             <AppButton
-              className="backdrop-blur-sm w-42 text-lg border border-white py-5"
+              className="backdrop-blur-sm w-42 text-lg border border-white"
               title="KYC"
             />
             <AppButton
-              className="backdrop-blur-xs w-42 text-lg border border-white py-5"
+              className="backdrop-blur-xs w-42 text-lg border border-white"
               title="Audit"
             />
           </div>

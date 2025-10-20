@@ -55,7 +55,7 @@ export default function AboutSMPLGPT() {
           <div className="mb-12">
             <AppButton
               title="About Us"
-              className="border border-[#2A7183]! text-sm! rounded-[60px] bg-[#4CCEEE1A]"
+              className="border border-[#2A7183]! py-2! text-sm! rounded-[60px] bg-[#4CCEEE1A]"
             />
 
             <h1

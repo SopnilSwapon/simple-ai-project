@@ -1,5 +1,5 @@
 import React from "react";
-import BlockChainSolutionSection from "../Components/common/BlockChainSolutionSec";
+import BlockChainSolutionSection from "../Components/home/BlockChainSolutionSec";
 import GetStartSection from "../Components/product/GetStartSection";
 import FAQSection from "../Components/home/FAQSection";
 import BlockChainProfessional from "../Components/product/BlockChainProfessional";

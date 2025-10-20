@@ -33,7 +33,7 @@ export default function BuySellSection() {
             <div className="mb-12">
               <AppButton
                 title="Buy SMPL"
-                className="border border-[#2A7183]! text-sm! rounded-[60px] bg-[#4CCEEE1A] mx-auto lg:mx-0"
+                className="border border-[#2A7183]! py-2! text-sm! rounded-[60px] bg-[#4CCEEE1A] mx-auto lg:mx-0"
               />
 
               <h1
@@ -87,7 +87,7 @@ export default function BuySellSection() {
                           I Want to Spend
                         </label>
 
-                        <div className="relative w-[90%] mt-4 mx-auto">
+                        <div className="relative w-full lg:w-[90%] mt-4 mx-auto">
                           <Select defaultValue="200">
                             {/* Custom trigger to control icon positions */}
                             <SelectTrigger className="w-full bg-[#0C1E27] px-6 py-7 border rounded-full border-gray-300 text-white flex justify-between items-center">
@@ -127,7 +127,7 @@ export default function BuySellSection() {
                           I Will Receive
                         </label>
 
-                        <div className="relative w-[90%] mt-4 mx-auto">
+                        <div className="relative w-full lg:w-[90%] mt-4 mx-auto">
                           <Select defaultValue="200">
                             {/* Custom trigger to control icon positions */}
                             <SelectTrigger className="w-full bg-[#0C1E27] px-6 py-7 border rounded-full border-gray-300 text-white flex justify-between items-center">
@@ -167,7 +167,7 @@ export default function BuySellSection() {
                           Pay With
                         </label>
 
-                        <div className="relative w-[90%] mt-4 mx-auto">
+                        <div className="relative w-full lg:w-[90%] mt-4 mx-auto">
                           <Select defaultValue="200">
                             {/* Custom trigger to control icon positions */}
                             <SelectTrigger className="w-full bg-[#0C1E27] px-6 py-7 border rounded-full border-gray-300 text-white flex justify-between items-center">
@@ -203,7 +203,7 @@ export default function BuySellSection() {
 
                   <CardFooter className="flex gap-3 flex-col lg:flex-row mx-auto justify-center">
                     <AppButton
-                      className="bg-[#4CCEEE] border-none text-black backdrop-blur-sm py-5 text-lg"
+                      className="bg-[#4CCEEE] border-none text-black backdrop-blur-sm  text-lg"
                       title="Buy $SMPL Now"
                     />
                     <AppButton
@@ -261,7 +261,7 @@ export default function BuySellSection() {
                           I Will Receive
                         </label>
 
-                        <div className="relative w-[90%] mt-4 mx-auto">
+                        <div className="relative w-full lg:w-[90%] mt-4 mx-auto">
                           <Select defaultValue="200">
                             {/* Custom trigger to control icon positions */}
                             <SelectTrigger className="w-full bg-[#0C1E27] px-6 py-7 border rounded-full border-gray-300 text-white flex justify-between items-center">
@@ -301,7 +301,7 @@ export default function BuySellSection() {
                           I Want to Spend
                         </label>
 
-                        <div className="relative w-[90%] mt-4 mx-auto">
+                        <div className="relative w-full lg:w-[90%] mt-4 mx-auto">
                           <Select defaultValue="200">
                             {/* Custom trigger to control icon positions */}
                             <SelectTrigger className="w-full bg-[#0C1E27] px-6 py-7 border rounded-full border-gray-300 text-white flex justify-between items-center">

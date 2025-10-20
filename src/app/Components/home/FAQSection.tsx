@@ -51,7 +51,7 @@ export default function FAQSection() {
     <div className="max-w-3xl mx-auto mt-8 md:mt-[50px]">
       <AppButton
         title="FAQ"
-        className="w-26 border mb-4 border-[#2A7183]! mx-auto text-sm! rounded-[60px] bg-[#4CCEEE1A]"
+        className="w-26 border mb-4 py-2! border-[#2A7183]! mx-auto text-sm! rounded-[60px] bg-[#4CCEEE1A]"
       />
       <h1
         className={`font-[700] text-2xl md:text-[48px] my-3 md:my-4 flex justify-center gap-2 text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}

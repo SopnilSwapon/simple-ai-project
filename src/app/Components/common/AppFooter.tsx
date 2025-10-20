@@ -98,7 +98,7 @@ export default function AppFooter() {
             Subscribe to our newsletter for the latest AI and blockchain updates
           </p>
 
-          <form className="flex items-center bg-[#0f1a23] rounded-full border border-[#4CCEEE] overflow-hidden md:max-w-none">
+          <form className="flex items-center max-w-xl bg-[#0f1a23] rounded-full border border-[#4CCEEE] overflow-hidden md:max-w-none">
             <input
               type="email"
               placeholder="Your Email Here"

@@ -1,6 +1,5 @@
 import AppButton from "../common/AppButton";
 import Image from "next/image";
-import mobileViewImg from "@/assets/Group 17.png";
 import automationImg from "@/assets/automatonImg.png";
 
 export default function BlockChainAutomation() {
@@ -12,7 +11,7 @@ export default function BlockChainAutomation() {
           <div>
             <AppButton
               title="How It Works"
-              className="border border-[#2A7183]! text-sm! mx-auto rounded-[60px] bg-[#4CCEEE1A]"
+              className="border border-[#2A7183]! py-2! text-sm! mx-auto rounded-[60px] bg-[#4CCEEE1A]"
             />
             <h1
               className={`font-[700] lg:text-[48px] text-2xl my-4 flex justify-center flex-col text-center text-[rgba(76,206,238,1)] font-[Sofia_Sans]`}

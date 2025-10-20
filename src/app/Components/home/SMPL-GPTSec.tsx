@@ -25,7 +25,7 @@ export default function SMPLGPTSec() {
           conversational A1 expertise.
         </p>
         <AppButton
-          className="hover:bg-[#4CCEEE]! bg-transparent hover:border-none w-44 h-14 mt-10 backdrop-blur-sm"
+          className="hover:bg-[#4CCEEE]! bg-transparent hover:border-none mt-10 backdrop-blur-sm"
           title="Try SMPL GPT"
         />
       </div>
