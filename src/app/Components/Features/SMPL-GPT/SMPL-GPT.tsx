@@ -1,6 +1,6 @@
 import img1 from "@/assets/code-svgrepo-com 1.png";
 import Image, { StaticImageData } from "next/image";
-import AppButton from "../common/AppButton";
+import AppButton from "../../common/AppButton";
 interface IFeature {
   id: number;
   title: string;
@@ -25,18 +25,18 @@ const features: IFeature[] = [
   },
 ];
 
-export default function SMPLGPTProduct() {
+export default function SMPLGPT() {
   return (
-    <section className="py-10">
+    <section className="py-25 ">
       <div>
         {/* Header Section */}
         <div className="mb-12">
           <AppButton
             title="Our Product"
-            className="border border-[#2A7183]! p-2! text-sm! mx-auto bg-[#4CCEEE1A]"
+            className="border border-[#2A7183]! py-2! text-sm! mx-auto rounded-[60px] bg-[#4CCEEE1A]"
           />
           <h1
-            className={`font-bold text-xl md:text-[32px] my-3 md:my-4 flex justify-center text-center gap-2 text-white!  font-[Sofia_Sans]`}
+            className={`font-bold text-xl md:text-[32px] my-3 md:my-4 flex-col sm:flex-row justify-center text-center gap-2 text-white!  font-[Sofia_Sans]`}
           >
             <span className="text-[rgba(76,206,238,1)]">SMPL GPT –</span>{" "}
             AI-Powered Blockchain Intelligence
@@ -78,7 +78,7 @@ export default function SMPLGPTProduct() {
                 </div>
                 <Image
                   src={icon}
-                  className="h-50 md:h-60 w-50 md:w-full  mx-auto"
+                  className="h-50 md:h-full w-50 md:w-full  mx-auto"
                   height={355}
                   width={355}
                   alt="Vector svg"
