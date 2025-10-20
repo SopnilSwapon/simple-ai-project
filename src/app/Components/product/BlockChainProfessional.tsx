@@ -5,6 +5,7 @@ import designLogo from "@/assets/Group 18.png";
 import Image, { StaticImageData } from "next/image";
 import AppButton from "../common/AppButton";
 import { Rating } from "@/components/ui/Rating";
+import Slider from "./Slider";
 
 interface IFeature {
   id: number;
@@ -66,32 +67,8 @@ export default function BlockChainProfessional() {
             blockchain solutions.
           </p>
         </div>
-        <Image src={designLogo} height={10} width={1320} alt="Vector svg" />
-        {/* Features List */}
-        <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 mt-12">
-          {features.map(
-            ({ id, name, description, icon, designation, rating }) => (
-              <div
-                key={id}
-                className="gap-4 p-8 bg-[#0B1820]/40 border border-white/10 rounded-2xl hover:bg-[#0B1820]/60 transition"
-              >
-                <div>
-                  <h2 className="text-xl md:text-2xl mt-2 font-semibold text-cyan-400">
-                    {name}
-                  </h2>
-                  <h3 className="mb-6 mt-2 text-white/70">{designation}</h3>
-                  <p className="mb-1">{description}</p>
-                </div>
-                <div className="mt-6 flex justify-between flex-col lg:flex-row items-center gap-4">
-                  <Image src={icon} height={155} width={155} alt="Vector svg" />
-                  <Rating value={rating} readOnly max={5} />
-                </div>
-              </div>
-            ),
-          )}
-        </ul>
       </div>
-      <div></div>
+      <Slider />
     </section>
   );
 }
