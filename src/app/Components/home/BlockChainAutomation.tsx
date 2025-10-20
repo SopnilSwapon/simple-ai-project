@@ -27,7 +27,7 @@ export default function BlockChainAutomation() {
           <div className="flex flex-col lg:flex-row gap-4 lg:p-6 pt-0 lg:pt-10">
             <div className="h-full">
               <div className="pt-5 lg:pt-24">
-                <h4 className="text-lg text-left lg:text-center font-semibold text-cyan-400">
+                <h4 className="text-lg font-semibold text-left lg:text-center pr-10 text-cyan-400">
                   Seamless Blockchain Support
                 </h4>
                 <hr className="lg:w-[60%] mx-auto text-cyan-400 border-b border-b-cyan-400 mt-1" />
@@ -39,8 +39,8 @@ export default function BlockChainAutomation() {
                   <li>Easy integration with minimal setup.</li>
                 </ul>
               </div>
-              <div className="pt-5 lg:pt-24">
-                <h4 className="text-lg text-left lg:text-center font-semibold text-cyan-400">
+              <div className="pt-5 lg:pt-">
+                <h4 className="text-lg text-left lg:text-center pr-12 font-semibold text-cyan-400">
                   AI scans and analyzes data
                 </h4>
                 <hr className="lg:w-[60%] mx-auto text-cyan-400 border-b border-b-cyan-400 mt-1" />
@@ -57,7 +57,7 @@ export default function BlockChainAutomation() {
                 </ul>
               </div>
             </div>
-            <div>
+            <div className="grow">
               <Image
                 src={automationImg}
                 height={422}
