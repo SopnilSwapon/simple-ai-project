@@ -51,7 +51,7 @@ export default function AppNavbar() {
                   <NavigationMenuItem className="hidden md:block">
                     <NavigationMenuTrigger
                       className={`flex items-center gap-1 text-[18px] transition-colors ${
-                        pathname === item.href
+                        pathname.includes("features")
                           ? "text-[#4CCEEE]"
                           : "text-primary hover:text-[#4CCEEE] font-normal"
                       }`}
@@ -66,7 +66,16 @@ export default function AppNavbar() {
                               asChild
                               className="bg-[#0C1E27] hover:bg-[#425058] pl-3 rounded-xl hover:text-[#4CCEEE] text-[14px] font-normal"
                             >
-                              <Link href={sub.href}>{sub.title}</Link>
+                              <Link
+                                className={`${
+                                  pathname === sub.href
+                                    ? "text-[#4CCEEE] border"
+                                    : " hover:text-[#4CCEEE] font-normal"
+                                }}`}
+                                href={sub.href}
+                              >
+                                {sub.title}
+                              </Link>
                             </NavigationMenuLink>
                           </li>
                         ))}
@@ -97,7 +106,7 @@ export default function AppNavbar() {
 
         {/* Desktop Button */}
         <div className="hidden lg:block pr-6">
-          <AppButton className="bg-white/5" title="Sign Up" />
+          <AppButton className="bg-white/5 py-2.5!" title="Sign Up" />
         </div>
 
         {/* Mobile Menu Button */}
@@ -113,12 +122,16 @@ export default function AppNavbar() {
       {mobileOpen && (
         <div className="lg:hidden bg-[#060C12] border-t border-[#1E293B] px-4 py-4 flex flex-col space-y-4 text-white">
           {navItems.map((item) =>
-            item.title === "Feature" ? (
+            item.title === "Features" ? (
               featureSubItems.map((sub) => (
                 <Link
                   key={sub.title}
                   href={sub.href}
-                  className={`hover:text-[#4CCEEE] transition-colors`}
+                  className={`${
+                    pathname === sub.href
+                      ? "text-[#4CCEEE] border"
+                      : " hover:text-[#4CCEEE] font-normal"
+                  }}`}
                   onClick={() => setMobileOpen(false)}
                 >
                   {sub.title}
@@ -128,7 +141,11 @@ export default function AppNavbar() {
               <Link
                 key={item.title}
                 href={item.href}
-                className={`hover:text-[#4CCEEE] transition-colors`}
+                className={`hover:text-[#4CCEEE] transition-colors ${
+                  pathname === item.href
+                    ? "text-[#4CCEEE]"
+                    : " hover:text-[#4CCEEE] font-normal"
+                }`}
                 onClick={() => setMobileOpen(false)}
               >
                 {item.title}
@@ -137,7 +154,7 @@ export default function AppNavbar() {
           )}
 
           <AppButton
-            className="hover:bg-[#4CCEEE]! hover:border-none backdrop-blur-sm bg-white/5"
+            className="hover:bg-[#4CCEEE]! max-w-[150px] py-1! hover:border-none backdrop-blur-sm bg-white/5"
             title="Sign Up"
           />
         </div>

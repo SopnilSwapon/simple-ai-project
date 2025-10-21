@@ -25,7 +25,7 @@ export default function GetStartSection() {
             effortlessly with leading blockchain platforms.
           </p>
           <AppButton
-            className="bg-[#4CCEEE] border-none text-black backdrop-blur-sm py-5 text-lg px-8 mx-auto"
+            className="bg-[#4CCEEE] border-none text-black backdrop-blur-sm lg:py-4 py-3  text-lg px-8 mx-auto"
             title="Schedule a Demo"
           />
         </div>
