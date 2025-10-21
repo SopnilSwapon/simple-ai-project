@@ -379,7 +379,7 @@ export default function BuySellSection() {
                   <CardFooter className="flex gap-3 flex-col lg:flex-row justify-center">
                     <AppButton
                       className="bg-[#4CCEEE] border-none text-black backdrop-blur-sm py-5 text-lg"
-                      title="Buy $SMPL Now"
+                      title="Sell $SMPL Now"
                     />
                     <AppButton
                       className="bg-transparent border-none text-white backdrop-blur-sm flex items-center gap-2 py-5 text-lg"
@@ -398,7 +398,7 @@ export default function BuySellSection() {
                               fillRule="nonzero"
                             />
                           </svg>
-                          Recurring Buy
+                          Recurring Sell
                           <svg
                             viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg"
