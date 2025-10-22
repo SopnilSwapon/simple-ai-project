@@ -1,4 +1,3 @@
-import React from "react";
 import { Header1 } from "../Components/common/Header1";
 
 export default function Page() {

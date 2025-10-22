@@ -1,3 +1,5 @@
+import { StaticImageData } from "next/image";
+
 import ProductCard from "@/app/Components/features/ProductCard";
 import cardImage from "@/assets/chat 1.png";
 import icon1 from "@/assets/Frame.png";
@@ -6,9 +8,8 @@ import icon3 from "@/assets/Group (1).png";
 import icon4 from "@/assets/Group (2).png";
 import left_side_img from "@/assets/Frame 2147226984.png";
 import right_side_img from "@/assets/Frame 2147226986.png";
-import React from "react";
+
 import BlockChainProfessional from "@/app/Components/common/BlockChainProfessional";
-import { StaticImageData } from "next/image";
 import WhyChooseAndHowWorks from "@/app/Components/features/WhyChooseAndHowWorks";
 import GetStartedSection from "@/app/Components/features/GetStartedSection";
 
@@ -73,6 +74,8 @@ const howItWorksData: IFeature[] = [
 export default function page() {
   return (
     <div className="max-w-[1320px] mx-auto px-6 py:15 lg:py-25">
+      {/* Product card view */}
+
       <ProductCard
         sectionTag="Our Product"
         highlightText="SMPL AI Agents –"
@@ -84,12 +87,11 @@ export default function page() {
           "Detect vulnerabilities in smart contracts before deployment.",
           "Real-time AI analysis for secure transactions.",
         ]}
-        buttonText="Try SMPL GPT"
+        buttonText="Try SMPL AI Agents"
         icon={cardImage}
       />
-      {/* Why choose SMPL GPT & How it works section */}
       <section>
-        {/* Section 1 */}
+        {/* Why choose SMPL Protect */}
         <WhyChooseAndHowWorks
           btnTitle="Why Choose"
           headingWhite="Why Choose"
@@ -100,7 +102,8 @@ export default function page() {
           reverse={false}
         />
 
-        {/* Section 2 */}
+        {/*  How it works section  */}
+
         <WhyChooseAndHowWorks
           btnTitle="How it work"
           headingWhite="How IT"
@@ -111,13 +114,14 @@ export default function page() {
           reverse={true}
         />
       </section>
+      {/* Get started section */}
       <GetStartedSection
         bgImage="/getstartedBg.png"
         titleWhite="Get Started"
         titleColor="with SMPL AI Agents Today!"
         description="No Setup Required – Instant AI-powered insights at your fingertips
 Secure & Reliable – Built with cutting-edge blockchain security standards. Scalable for Any Project – From startups to enterprises, we’ve got you covered."
-        buttonText="Start Using SMPL GPT"
+        buttonText="Start Using SMPL AI Agents"
       />
       <BlockChainProfessional />
     </div>
