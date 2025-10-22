@@ -1,5 +1,5 @@
 import ProductCard from "@/app/Components/features/ProductCard";
-import img1 from "@/assets/code-svgrepo-com 1.png";
+import cardImage from "@/assets/coin-svgrepo-com 1.png";
 import icon1 from "@/assets/Frame.png";
 import icon2 from "@/assets/Group.png";
 import icon3 from "@/assets/Group (1).png";
@@ -85,7 +85,7 @@ export default function page() {
           "Real-time AI analysis for secure transactions.",
         ]}
         buttonText="Try SMPL GPT"
-        icon={img1}
+        icon={cardImage}
       />
       {/* Why choose SMPL GPT & How it works section */}
       <section>
@@ -114,7 +114,7 @@ export default function page() {
       <GetStartedSection
         bgImage="/getstartedBg.png"
         titleWhite="Get Started"
-        titleColor="with SMPL GPT Today!"
+        titleColor="with SMPL Create Today!"
         description="No Setup Required – Instant AI-powered insights at your fingertips
 Secure & Reliable – Built with cutting-edge blockchain security standards. Scalable for Any Project – From startups to enterprises, we’ve got you covered."
         buttonText="Start Using SMPL GPT"
