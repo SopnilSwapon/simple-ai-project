@@ -1,5 +1,5 @@
-import ProductCard from "@/app/Components/common/features/ProductCard";
-import img1 from "@/assets/code-svgrepo-com 1.png";
+import ProductCard from "@/app/Components/features/ProductCard";
+import img1 from "@/assets/shield-half-svgrepo-com-1 1.png";
 import icon1 from "@/assets/Frame.png";
 import icon2 from "@/assets/Group.png";
 import icon3 from "@/assets/Group (1).png";
@@ -9,8 +9,8 @@ import right_side_img from "@/assets/Frame 2147226986.png";
 import React from "react";
 import BlockChainProfessional from "@/app/Components/common/BlockChainProfessional";
 import { StaticImageData } from "next/image";
-import WhyChooseAndHowWorks from "@/app/Components/common/features/WhyChooseAndHowWorks";
-import GetStartedSection from "@/app/Components/common/features/GetStartedSection";
+import WhyChooseAndHowWorks from "@/app/Components/features/WhyChooseAndHowWorks";
+import GetStartedSection from "@/app/Components/features/GetStartedSection";
 
 interface IFeature {
   id: number;
@@ -84,7 +84,7 @@ export default function page() {
           "Detect vulnerabilities in smart contracts before deployment.",
           "Real-time AI analysis for secure transactions.",
         ]}
-        buttonText="Try SMPL GPT"
+        buttonText="Try SMPL Protect"
         icon={img1}
       />
       {/* Why choose SMPL GPT & How it works section */}
@@ -93,7 +93,7 @@ export default function page() {
         <WhyChooseAndHowWorks
           btnTitle="Why Choose"
           headingWhite="Why Choose"
-          headingColor="SMPLAL GPT"
+          headingColor="SMPLA GPT"
           subText="Unlock Data-Driven Insights for Smarter Decision-Making"
           features={whyChooseData}
           image={left_side_img}
@@ -114,7 +114,7 @@ export default function page() {
       <GetStartedSection
         bgImage="/getstartedBg.png"
         titleWhite="Get Started"
-        titleColor="with SMPL GPT Today!"
+        titleColor="with SMPL Protect Today!"
         description="No Setup Required – Instant AI-powered insights at your fingertips
 Secure & Reliable – Built with cutting-edge blockchain security standards. Scalable for Any Project – From startups to enterprises, we’ve got you covered."
         buttonText="Start Using SMPL GPT"

@@ -1,5 +1,5 @@
 import React from "react";
-import AppButton from "../AppButton";
+import AppButton from "../common/AppButton";
 
 interface IGetStartedSectionProps {
   bgImage: string;

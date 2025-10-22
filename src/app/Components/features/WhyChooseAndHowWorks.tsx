@@ -1,5 +1,5 @@
 import Image, { StaticImageData } from "next/image";
-import AppButton from "../../common/AppButton";
+import AppButton from "../common/AppButton";
 
 interface IFeature {
   id: number;

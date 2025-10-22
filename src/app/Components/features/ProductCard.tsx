@@ -1,7 +1,7 @@
 "use client";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import AppButton from "../AppButton";
+import AppButton from "../common/AppButton";
 
 interface IProductCard {
   sectionTag?: string; // optional small button title like "Our Product"

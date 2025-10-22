@@ -1,4 +1,4 @@
-import ProductCard from "@/app/Components/common/features/ProductCard";
+import ProductCard from "@/app/Components/features/ProductCard";
 import img1 from "@/assets/code-svgrepo-com 1.png";
 import icon1 from "@/assets/Frame.png";
 import icon2 from "@/assets/Group.png";
@@ -9,8 +9,8 @@ import right_side_img from "@/assets/Frame 2147226986.png";
 import React from "react";
 import BlockChainProfessional from "@/app/Components/common/BlockChainProfessional";
 import { StaticImageData } from "next/image";
-import WhyChooseAndHowWorks from "@/app/Components/common/features/WhyChooseAndHowWorks";
-import GetStartedSection from "@/app/Components/common/features/GetStartedSection";
+import WhyChooseAndHowWorks from "@/app/Components/features/WhyChooseAndHowWorks";
+import GetStartedSection from "@/app/Components/features/GetStartedSection";
 
 interface IFeature {
   id: number;
